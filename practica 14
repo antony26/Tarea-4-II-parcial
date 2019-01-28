@@ -1,0 +1,61 @@
+<?php
+class Nombre { 
+private String nombre; 
+private String apellido_1; 
+private String apellido_2; 
+public Nombre(String nombre, String apellido_1, 
+String apellido_2) { 
+this.nombre=nombre; 
+this.apellido_1=apellido_1; 
+this.apellido_2=apellido_2; 
+} 
+public String nombre() { 
+return nombre; 
+} 
+public String apellido_1() { 
+return apellido_1; 
+} 
+public String apellido_2() { 
+return apellido_2; 
+} 
+public void imprime_nombre() { 
+System.out.print(nombre+” “); 
+System.out.print(apellido_1 +” “); 
+System.out.println(apellido_2);
+
+
+class  Alumno{ 
+private Nombre nombre_ Alumno; 
+private int DNI; 
+public Alumno(Nombre nombre, int DNI) { 
+nombre_ Alumno=nombre; 
+this.DNI=DNI; 
+} 
+public void imprime_datos( ) { 
+nombre_ Alumno.imprime_nombre(); 
+System.out.println(“DNI: “+DNI); 
+System.out.println(); 
+} 
+public Nombre nombre() { 
+return nombre_ Alumno; 
+} 
+public int DNI() { 
+return DNI; 
+} 
+}
+
+	class curso{
+		public static void main (String [] args){
+			alumno [] estudiante = new alumno [3]; nombre aux;
+aux=new Alumno(“Julia”, “Lope”, “estudiante”); 
+individuos[0]= newAlumno(aux, 77453279); 
+aux=new Nombre(“Antony”, “Rivas”); 
+individuos[1]= new Alumno(aux); 
+individuos[2]= new Alumno 
+(new Nombre(“Antonio”,Rios”), 
+28765301); 
+System.out.println(); 
+System.out.println(“Alumno en lista \n——————————”); 
+System.out.println(); 
+for (int i=0; i<=2; i++){  
+individuos [i].imprime_datos();
