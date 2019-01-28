@@ -1,0 +1,53 @@
+<?php
+	
+	class camion{
+	     <?php
+	
+	class camion{
+	     
+	    Private $datos;
+	    private $num_ejes;
+	    private $peso;
+   
+	    public function __construct($datos,$num_ejes, $peso){
+	        $this->dato= $datos;
+	        $this->num_eje = $num_ejes;
+        $this->peso = $peso;
+	        
+	
+	
+	    }
+	    public function setdatos($datos){
+	
+	        $this->datos = $datos;
+      return $this->datos;
+	    }
+	
+	    public function setejes($num_ejes){
+
+        $this->num_eje = $num_ejes;
+      return $this->num_ejes;
+		}	
+    
+       
+      public function getpeso($peso){
+	  $this->peso;
+	
+	 return $this->peso;
+	    }
+	     
+
+	     
+	    public function mostrarInfo(){
+	         
+	     
+	        $info = "<h1>Información del camion:</h1>";
+	        $info.= "dato: ".$this->getdato();
+	        $info.= "<br/> eje: ".$this->geteje();
+	        $info.= "<br/> peso: ".$this->getpeso();
+			
+		}
+	
+	         
+	  return $info;
+		}
